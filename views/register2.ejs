@@ -1,0 +1,76 @@
+<% include partials/header %>
+
+
+<div class="container" style="background: #ede3e1; 
+                              width:50%;
+                              margin-top: 80px;
+                              margin-bottom: 32px;
+                              opacity: 0.9;
+                              filter: alpha(opacity=90);
+                              padding-top: 18px;
+                              padding-bottom: 16px;">
+    <div class="row">
+	   <h1 style="text-align:center; font-family: 'Philosopher', sans-serif">INFONEST</h1>
+	   <div style="width:60%; margin:25px auto; height:45%">
+			<form action="/register2" method="POST">
+                
+                <div class="row">    
+                    <div class="form-group col-md-12">
+                        <b><input name="position" placeholder="Position" type="text" data-trigger="focus" class="form-control input-lg" required="true" value="Admin"/></b>
+                        <span class="fa fa-2x form-control-feedback hide icon-display"></span>
+                    </div>                               	                               
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label style="font-family: 'Philosopher', sans-serif; font-size: 20px;">First name</label>
+                        <input name="firstname" placeholder="First Name" type="text" class="form-control input-lg" required="true" value=""/>
+                        <span class="fa fa-2x form-control-feedback hide"></span>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label style="font-family: 'Philosopher', sans-serif; font-size: 20px;">Last name</label>
+                        <input name="lastname" placeholder="Last Name" type="text" class="form-control input-lg" required="true" value="">
+                        <span class="fa fa-2x form-control-feedback hide"></span>
+                    </div>
+                </div>
+                
+                <div class="row">          
+                    <div class="form-group col-md-12">
+                        <label style="font-family: 'Philosopher', sans-serif; font-size: 20px;">Email address</label>
+                        <input name="email" placeholder="Email" type="text" class="form-control input-lg" required="true" value=""/>
+                        <span class="fa fa-2x form-control-feedback hide"></span>
+                    </div>
+                </div>
+                
+                <div class="row">    
+                    <div class="form-group col-md-12">
+                        <label style="font-family: 'Philosopher', sans-serif; font-size: 20px;">Phone Number</label>
+                        <input name="phonenumber" placeholder="Phone number" type="text" data-trigger="focus" class="form-control input-lg" required="true" value=""/>
+                        <span class="fa fa-2x form-control-feedback hide icon-display"></span>
+                    </div>                               	                               
+                </div>
+                
+                <div class="row">          
+                    <div class="form-group col-md-12">
+                        <label style="font-family: 'Philosopher', sans-serif; font-size: 20px;">User name</label>
+                        <input name="username" data-validation="username" placeholder="Username" type="text" class="form-control input-lg" required="true" value=""/>
+                        <span class="fa fa-2x form-control-feedback hide"></span>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label style="font-family: 'Philosopher', sans-serif; font-size: 20px;">Password</label>
+                        <input name="password" placeholder="Password" data-trigger="focus" type="password" class="form-control input-lg" required="true" value="" maxlength="25" autocomplete="new-password"/>
+                        <span class="fa fa-2x form-control-feedback hide "></span>
+                     </div> 
+                 </div>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <button type="submit" class="btn btn-md btn-primary" style="font-family: 'Philosopher', sans-serif; font-size: 19px; background:#eb2226;">SignUp</button>
+                    </div>
+                </div>
+           </form>
+        </div>
+    </div>

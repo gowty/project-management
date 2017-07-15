@@ -1,0 +1,34 @@
+
+<% include partials/header %>
+
+<div class="container" style="background: #ede3e1; 
+                              width:40%;
+                              margin-top: 115px;
+                              opacity: 0.8;
+                              filter: alpha(opacity=80);
+                              padding-top: 18px;
+                              padding-bottom: 16px;">
+    <div class="row">
+	   <h1 style="text-align:center; font-family: 'Philosopher', sans-serif; font-size: 50px;">INFONEST</h1>
+	   <div style="width:60%; margin:25px auto; height: 45%;">
+			<form action="/login" method="POST">
+				<div class="form-group">
+				    <label style="font-family: 'Philosopher', sans-serif; font-size: 20px;">User name:</label>
+                    <input type="text" name="username" placeholder="Username" class="form-control input-lg">
+				</div>
+                
+				<div class="form-group">
+				    <label style="font-family: 'Philosopher', sans-serif; font-size: 20px;">Password:</label>
+                    <input type="password" name="password" placeholder="Password" class="form-control input-lg">
+				</div>
+                
+				<div class="checkbox">
+                    <label style="font-family: 'Philosopher', sans-serif; font-size: 20px;"><input type="checkbox" name="remember"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-md btn-primary" style="font-family: 'Philosopher', sans-serif; font-size: 19px; background:#eb2226;">SignIn</button>
+
+			</form>
+		</div>
+    </div>
+</div>
+    
